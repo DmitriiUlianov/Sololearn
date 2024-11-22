@@ -5,3 +5,9 @@ print(x or y)  # "or" operator returns the first truthy operand if it finds one;
 
 [1, 1, 1]
 [0, 0, 0]
+
+
+print("a" or "b") # a
+print("a" and "b") # b
+print("" or "a") # a
+print("" and "b") # 
