@@ -11,3 +11,9 @@ print("a" or "b") # a
 print("a" and "b") # b
 print("" or "a") # a
 print("" and "b") # 
+
+print(None or False) # False
+print(False or None) # None
+
+print(None and False) # None
+print(False and None) # False
