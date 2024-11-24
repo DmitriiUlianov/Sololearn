@@ -2,7 +2,7 @@ def dec(func):
     def f(a, b):
         print("Solo", end="")
         if b == 0:
-            print("Lear", end="")
+            print("Learn", end="")
             return
         return func(a, b)  # Calls the original divide function
     return f
@@ -13,11 +13,11 @@ def divide(a, b):
     return a / b
 
 # Test cases
-print("\nResult:", divide(3, 0))  # Output: SoloLear, Result: None
+print("\nResult:", divide(3, 0))  # Output: SoloLearn, Result: None
 print("\nResult:", divide(6, 2))  # Output: Solo [Calling original divide] 3.0
 
 # Output:
-SoloLear
+SoloLearn
 Result: None
 Solo [Calling original divide] 
 Result: 3.0
@@ -25,7 +25,7 @@ Result: 3.0
 """
 Key Takeaways
 The @dec decorator modifies the behavior of divide by:
-Adding custom logic ("SoloLear") before calling the original function.
+Adding custom logic ("SoloLearn") before calling the original function.
 Preventing the original divide function from being called when b == 0.
 The original divide function (func) is still accessible inside f and is called only if the conditions in f allow it.
 
